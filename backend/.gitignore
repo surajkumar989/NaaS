@@ -6,4 +6,4 @@ dist/
 *.log
 
 # Firebase credentials
-backend/firebase-service-account.json
+firebase-service-account.json
