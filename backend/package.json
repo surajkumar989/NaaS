@@ -1,0 +1,21 @@
+{
+  "name": "naas-backend",
+  "version": "1.0.0",
+  "description": "A Backend for my project Notification as a service",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "author": "Suraj Kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "bullmq": "^5.80.9",
+    "dot-env": "^0.0.1",
+    "firebase-admin": "^14.2.0",
+    "mongoose": "^9.8.0",
+    "redis": "^6.1.0"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.local
+npm-debug.log*
+dist/
+*.log
+
+# Firebase credentials
+backend/firebase-service-account.json
