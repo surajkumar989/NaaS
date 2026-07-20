@@ -14,7 +14,9 @@
   "dependencies": {
     "bullmq": "^5.80.9",
     "dotenv": "^17.4.2",
+    "express": "^5.2.1",
     "firebase-admin": "^14.2.0",
+    "mongodb": "^7.5.0",
     "mongoose": "^9.8.0",
     "redis": "^6.1.0"
   }
