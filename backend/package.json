@@ -1,7 +1,6 @@
 {
   "name": "naas-backend",
   "version": "1.0.0",
-  "type": "module",
   "description": "A Backend for my project Notification as a service",
   "main": "index.js",
   "scripts": {
