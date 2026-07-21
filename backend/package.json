@@ -19,5 +19,15 @@
     "mongodb": "^7.5.0",
     "mongoose": "^9.8.0",
     "redis": "^6.1.0"
-  }
+  },
+  
+  "json.schemas": [
+    {
+      "fileMatch": ["package.json"],
+      "url": "https://json.schemastore.org/package"
+    }
+  ]
 }
+  
+
+
