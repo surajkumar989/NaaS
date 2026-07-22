@@ -1,19 +1,28 @@
 import express from "express";
+import authRoutes from './routes/authRoutes.js';
+import cors from 'cors'
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.use(express.json({limit:"100kb"}))
+
+app.use(express.urlencoded({extended:true,limit:"100kb"}))
+
+app.use(express.static("public"))
 
 app.get('/', (req, res) => {
-    res.send(`
-        <h1> Hello World</h1>
-        ${process.env.PORT}
-        <h1> MONGODB CONNECTED!!</h1>
-    `);
+    res.send(`<h1> Hello World</h1>`);
 });
 
-app.listen(PORT, () => {
-    console.log(`App listening on Port ${PORT}`);
-});
+app.use('/auth', authRoutes);
+
+app.use(cors({
+    origin: process.env.CORS_ORIGIN,
+    credential: true,
+    }),
+);
+
+
 
 export default app;
