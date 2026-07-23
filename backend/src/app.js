@@ -1,5 +1,6 @@
 import express from "express";
 import authRoutes from './routes/authRoutes.js';
+import projectRoutes from './routes/projectRoutes.js';
 import cors from 'cors'
 
 const app = express();
@@ -16,6 +17,8 @@ app.get('/', (req, res) => {
 });
 
 app.use('/auth', authRoutes);
+
+app.use('/projects', projectRoutes);
 
 app.use(cors({
     origin: process.env.CORS_ORIGIN,
